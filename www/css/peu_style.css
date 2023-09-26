@@ -1,0 +1,476 @@
+@charset "UTF-8";
+
+html {
+
+ padding-top: 10px;
+ padding-bottom: 10px;
+ overflow-y: scroll;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+body{
+ font: 12px Verdana, Arial, Helvetica, sans-serif;
+ margin: 0 auto;
+ text-align: center;
+ margin-top: 0px;
+ margin-bottom: 0px;
+
+ background: #C0C0C0;
+    margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+    padding: 0;
+    text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1 {
+  margin: .67em 0;
+  padding: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: normal;
+  font-size-adjust: none;
+  letter-spacing: -0.5;
+  color: #000000;
+  font-style: underline;
+}
+h2 {
+  margin: .75em 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: auto;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  font-size: 1.5em;
+  color: #000000;
+}
+h3 {
+  margin: .83em 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: auto;
+  line-height: normal;
+  font-size: 1.17em;
+  color: #000000;
+}
+h4 {
+  margin: 1.12em 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: auto;
+  line-height: normal;
+  font-size: 1em;
+  color: #000000;
+}
+
+pre{
+    text-align: justify;
+}
+
+a {
+    font-weight: bold;
+    color: #990000;
+}
+
+a:hover {
+    color: #0040FF;
+    text-decoration: none;
+    font-weight: bolder;
+}
+p {
+    text-align: justify;
+}
+ul {
+    text-align: justify;
+}
+
+ol {
+    text-align: justify;
+}
+/* for styling <br /> tags to clear a line */
+.clear {
+    display: block;
+    clear: both;
+    line-height: 0;
+}
+.container {
+    display: block;
+    /*width: 1000px;*/
+    text-align: center;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0px;
+    height: 43px;
+    width: 1300px;
+}
+.menuContainer {
+    text-align: center;
+    width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+.mainContent {
+    background-color: #F9F9F9;
+    border: 1px solid;
+    border-color: #666666;
+    margin: 0 auto;
+    width: 1250px; /* 950 - 25 - 25 - 1 - 1 */
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+}
+.leftTable {
+    padding: 0;
+    text-align: justify;
+    margin-left: 0px;
+}
+.innerList {
+    list-style-type: none;
+}
+
+	
+
+
+
+#content {
+    padding: 0;
+}
+
+#main_body {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0px;
+    height: 100px;
+    width: 1300px;
+    border-color: #ffffff;
+    background: #ffffff;
+
+}
+
+#logo {
+    width: 1300px;
+        height: 128px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #ffffff;
+    padding: 0;
+     background: #ffffff;
+}
+#footer{
+    color: #FFFFFF;
+    background-color: #08088A;
+    margin:auto auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position:relative;
+    width:1302px;
+    text-align: center;
+}
+#footer p{
+    color: #FFFFFF;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+#footer a{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.so_drug_uses_p {
+    text-align: justify;
+}
+
+/* styles for ajaxDiv class */
+.ajaxdiv_open {
+  height: 2em;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 800;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 1em;
+  background: #E0F9E0 url(/images/down-arrow-grey.gif) no-repeat 0.1em 0.5em;
+  border:1px solid #C9E1C9;
+}
+.ajaxdiv_closed {
+  height: 2em;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 800;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 1em;
+  background: #BBBBBB url(/images/right-arrow-grey.gif) no-repeat 0.2em 0.5em;
+  border:1px solid #A1A1A1;
+}
+.ajaxdiv_title {
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+  padding-left: 1.2em;
+  padding-top: 0.5em;
+  float: left;
+}
+.ajaxdiv_header_icon {
+  float: right;
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+  margin-right: 1.2ex;
+  padding-top: 0.5em;
+}
+.ajaxdiv_help_icon {
+  float: right;
+  cursor: help; /* hand-shaped cursor */
+  margin-right: 1.2ex;
+  padding-top: 0.5em;
+}
+.ajaxdiv_top_menu {
+    float: left;
+    height: 1.5em;
+    margin-top: -2em;
+}
+.ajaxdiv_top_button {
+  border: 1px dotted;
+  background-color: #CCFFCC;
+  float: right;
+  padding: 0.2em 0.3em;
+  margin-right: 1em;
+  cursor: pointer;  /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+  font-weight: 800;
+  font-size: 0.9em;
+}
+.ajaxdiv_content {
+    text-align: left;
+    border: solid #BBBBBB 1px;
+    border-top: 0px;
+    padding: 0em;
+}
+.ajaxdiv_content_borderless {
+    padding: 0em;
+}
+.ajax-loading {
+    height: 50px;
+    padding: 0px;
+    background: url(/images/spinner.gif) no-repeat center;
+}
+
+.converterTable {
+    width: 125px;
+    font: 10px Verdana;
+}
+
+.ORF a {color:black;}
+.ORF td.leftsmall {
+ font-family: Arial,Helvetica,sans-serif;
+ font-size: small;
+ color: black;
+ vertical-align: middle;
+ text-align: left;
+ background-color:#F6F6F6;
+}
+.ORF td.header{
+ font-family: Arial,helvetica,sans-serif;
+ font-weight: bold;
+ font-size: medium;
+ background-color:#990000;
+ color:#FFF;
+ vertical-align: top;
+ text-align: left;
+}
+.ORF td.centersmall{
+ font-family: Arial,Helvetica,sans-serif;
+ font-size: small;
+ color: black;
+ vertical-align: middle;
+ text-align: center;
+ background-color:#F6F6F6;
+}
+.ORF th.centersmall {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: small;
+ color: black;
+ vertical-align:middle;
+ text-align:center;
+ text-decoration:underline;
+ background-color:#F6F6F6;
+}
+.ORF td.lightgreen {
+background-color:#F6F6F6;
+}
+
+/* For community annotation page */
+#table_container {width:100%;background-color:#F6F6F6;}
+.small_s {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight:bold; font-style: normal; color: #6B3608;text-align:center;}
+.bold_rust_label {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight:bold; font-style: normal; color: #6B3608;text-align:left;}
+.ca_bold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold; font-style: normal;}
+.ca_text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:normal; font-style: normal;}
+table.summary td {background-color:#FFFFFF;padding:2px; }
+table.family_table td {background-color:#F4FFE3;padding:2px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:normal; font-style: normal;}
+.close {display: none;}
+
+/* FOR INDEX PAGE */
+#index_left {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    float: left;
+    width: 200px;
+    height: 440px;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.0em;
+    text-align: left;
+    line-height: 1.5;
+    display: inline;
+}
+#index_left table{
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    width: 152px;
+}
+#index_left a {
+    font-weight: normal;
+    color: #990000;
+}
+
+#index_right {
+    display: inline;
+    float: right;
+    width: 500px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+#index_right_top {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    float: right;
+    height: 588px;
+    width: 500px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+#index_right_top p {
+    font-size: 0.9em;
+}
+#index_right_bottom {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    float: right;
+    height: 225px;
+    width: 500px;
+    margin-left: 675px;
+    padding: 5px;
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display:block;
+}
+#index_right_bottom p {
+    font-size: 0.9em
+}
+.index_content {
+    float: none;
+    width: 325px;
+    text-align: center;
+    margin-left: 435px;
+    /*display: inline;*/
+}
+
+/*blast page css by Marc Habermann*/
+#content_wrapper {
+  margin-top:10px;
+  margin-bottom:0px;
+  margin-left:15px;
+  margin-right:15px;
+  clear:both;
+}
+
+#left_side {
+  float: left;
+  width:540px;
+  background-color: #FFFFFF;
+  /* border:0px dashed #cccccc; */
+}
+
+h9 {
+  margin-top:0px;
+  margin-bottom:10px;
+  font-family: arial, verdana, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  background-color:#990000;
+  padding:4px;
+  clear:both;
+}
+
+pre { font-size:14px;}
+
+h5 {
+margin-top:0px;
+margin-bottom:10px;
+font-family: arial, verdana, sans-serif;
+font-size: 17px;
+color: #990000;
+background-color:#FFFFFF;
+font-weight:normal;
+padding:4px;
+}
+
+#left_side h6 {
+  margin-top:0px;
+  margin-bottom:10px;
+  text-align:left;
+  font-family: arial, verdana, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  background-color:#990000; /*not so light green by jason*/
+  padding:4px;
+  clear:both;
+}
+
+#spinner {display:none;}
+
+table.sortable thead {
+    background-color:#BB0000;
+    color: #fff;
+    cursor:default;
+    font-size: 12px;
+    border-left:0px;
+    border-right:0px;        
+}
+
+table.sortable tbody tr:nth-child(2n) td {
+        background-color: #fff;
+        font-size:12px;
+        border-bottom:1px;
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+        background-color: #08088A;
+        font-size:12px;
+        border-bottom:1px;
+}
+
+

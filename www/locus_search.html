@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+     
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Passionfruit Genomic Database</title>
+    <script src="/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+    <!-- mootools libraries -->
+    <script src="/js/mootools-1.2-core.js" type="text/javascript"></script>
+    <script src="/js/mootools-1.2-more.js" type="text/javascript"></script>
+    <!-- tables on cows sortable and paginating table for mootools -->
+    <script src="/js/sorting_table.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+     </script>
+    <script type="text/javascript">
+     try {
+     var pageTracker = _gat._getTracker("UA-10599399-1");
+     pageTracker._trackPageview();
+     } catch(err) {}
+    </script>
+
+    <!-- end of Google code -->
+    <link href="/css/peu_style.css" rel="stylesheet" type="text/css" />
+    <!-- dreamweaver spry menu bar styles -->
+    <link href="/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    </head>
+
+   <div id='main_body'>
+    <table width='100%' height="85px" background="#ffffff" align="center" >
+ 
+     <tr>
+
+
+		<td style=' background: #ffffff;     padding-left: 45px;'><div style='text-align: left; font-size: 1.4em'><a href='/'><img src="/img/genome_top4.png" style='border: none; width: 70px;background:#ffffff'  alt="peu" /></a></div>		</td>
+
+		<td style=' background: #ffffff;     padding-left: 45px;'><div style='text-align: left; font-size: 3.6em;'>Passionfruit Genomic Database</div>	</td>
+		<td style=' background: #ffffff ;    padding-right: 45px;'>
+
+			<p style ="margin:6px">
+
+		<div style='text-align: right; font-size: 1.2em;padding-left: 35px'><a href="http://www.passionfruit.com.cn:4567">Blast Search</a>/Blast Search<br /><a href="http://passionfruit.com.cn/Encoding_gene_search.html/">Search and Analysis Tool</a>/Tools <br /><a href="http://passionfruit.com.cn/gene_expression.html">Expression Search</a>/Gene Expression Pattern v1.0
+		</div>
+			    			<br/>
+		<div style='text-align: right; padding-right: 65px;'>
+
+  <form name="search_textbox_form" action="/cgi-bin/name_search.pl" method="get" onsubmit="return doSearch()" id="search_textbox_form">
+          <div>
+            <input type="hidden" name="type" value="general">
+            <input type="hidden" name="search_action">
+            <input type="hidden" name="method">
+            <input type="hidden" name="show_obsolete">
+            <input type="text" name="name" value="Pe2g01742" size="9" id="searchfield" title="Search term" style='color:grey; font-size: 1em;padding-left: 5px'>
+            <select name="site" title="Data type">
+              <option value="keggpathways">KEGG</option>
+              <option value="goslin">GO</option>
+              <option value="Information" selected>Locus ID</option>
+              <option value="motifdomain">TF Search</option>
+              <option value="LocusSearch">Locus Search</option>
+              <option value="keyword" >Keyword</option>
+            </select>
+            <select name="variety" title="Data type">
+
+              <option value="Peu_Y" selected>Peu_Y</option>
+              <option value="Peu_P" >Peu_P</option>
+            </select>
+            <input type="submit" alt="search" value="Search" id="searchbutton">
+            <input type="hidden" name="SEARCH_EXACT" value="4">
+            <input type="hidden" name="SEARCH_CONTAINS" value="1">
+          </div>
+        </form></div>
+        
+		</td>
+
+	</tr>   
+ </table>       
+</div>
+
+<div class="header">
+<div class="menuContainer" id="topMenu">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href='/index.html' class='MenuBarItemSubmenu'>Home</a>
+        <ul>
+            <li><a href="http://passionfruit.com.cn/Database_Introduction.html">Database Introduction</a></li>
+            <li><a href="http://passionfruit.com.cn/Publications.html">Publications</a></li>
+            <li><a href="http://passionfruit.com.cn/Contact_Us.html">Contact Us</a></li>
+        </ul>
+    </li>
+        <li><a href='/Encoding_gene_search.html'  class='MenuBarItemSubmenu'>Annotation Search</a>
+         <ul>
+                 <li><a href="http://passionfruit.com.cn/locus_search.html" >Gene Locus Search</a></li>
+                <li><a href="http://passionfruit.com.cn/motif_search.html" >Motif/Domain Search</a></li>
+                 <li><a href="http://passionfruit.com.cn/KEGG_search.html" >KEGG Search</a></li>
+                 <li><a href="http://passionfruit.com.cn/GO_search.html" >GO Search</a></li>
+                  <li><a href="http://passionfruit.com.cn/miRNA.html" >miRNA Search</a></li>
+                <li><a href="http://passionfruit.com.cn/tRNA.html" >tRNA Search</a></li>
+                <li><a href="http://passionfruit.com.cn/rRNA.html" >rRNA Search</a></li> 
+        </ul>
+    </li>
+    
+ 
+    <li><a href="http://passionfruit.com.cn/gene_expression.html"  class='MenuBarItemSubmenu'>Gene Expression Heatmap</a>
+    <ul>
+            <li><a href="http://passionfruit.com.cn/motif_expression.html">Motif/Domain/Keyword Expression</a></li>   
+           <li><a href="http://passionfruit.com.cn/search_genes_expression.html">Gene Expression Heatmap</a></li>    
+         </ul>
+         </li>
+         
+    <li><a href="http://passionfruit.com.cn/gene_expression.html"  class='MenuBarItemSubmenu'>Analysis tool</a>
+    <ul>
+              <li><a href="http://www.passionfruit.com.cn:4567">Blast Search</a></li>    
+            <li><a href="http://passionfruit.com.cn/JBrowse/index.html" >Genome JBrowse</a></li>
+            <li><a href="http://passionfruit.com.cn/location_information.html">Gene position acquisition tool</a></li>
+            <li><a href="http://passionfruit.com.cn/hmmsearch.html">TF search tool</a></li>
+           <li><a href="http://passionfruit.com.cn/kaksanalysis.html">Kaks batch arithmetic tool</a></li>
+            <li><a href="http://passionfruit.com.cn/physicochemical_property.html">physicochemical property analysis</a></li>
+           <li><a href="http://passionfruit.com.cn/translate.html">Translate tool</a></li>
+           <li><a href="/sequence_download.html" class="MenuBarItemSubmenu">Feature sequence download tool</a>
+                <ul>
+                <li><a href="http://passionfruit.com.cn/search_downloads.html" >Gene and protein download tool</a></li>
+                <li><a href="http://passionfruit.com.cn/search_prom_downloads.html" >Promoter download tool</a></li>
+                </ul>
+       
+            </li>
+         </ul>
+         </li>
+         
+         
+
+  
+    <li><a href='/Downloads.html'  class='MenuBarItemSubmenu'>Downloads</a>
+     <ul>
+                <li><a href="http://passionfruit.com.cn/search_downloads.html" >Gene Downloads</a></li>
+                <li><a href="http://passionfruit.com.cn/database.html" >Passionfruit Database</a></li>
+
+    </ul>
+
+</ul>
+
+<script type="text/javascript">
+<!--
+        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+            imgDown:    "/SpryAssets/SpryMenuBarDownHover.gif",
+            imgRight:   "/SpryAssets/SpryMenuBarRightHover.gif"
+        });
+    //-->
+</script>
+
+</div>
+</div>
+
+
+<div class="content">
+    <div id="mainContent" class="mainContent"><br />
+
+ 
+<h2>Passionfruit Locus Identifier Search</h2>
+
+<p>Obtain a report of a predicted coding region by locus identifier (e.g. Pe4g03051)</p>
+<br />
+<form action="/cgi-bin/locus_search.pl" method="get">
+<b>Locus identifier:</b><input name = "namelist" size ="30" />
+<input type = "submit" value = "Search" /> <input type = "reset" value = " Clear " />
+</form>
+<br />
+    </div></div>
+ 
+ 
+ 
+ 
+
+     <div id="footer">
+                    <p>
+						<a href="http://passionfruit.com.cn:4567">About us </a> | 
+						<a href="http://www.passionfruit.com.cn:4567">BLAST </a> | 
+						<a href="http://passionfruit.com.cn/JBrowse/index.html">JBrowse </a> | 
+						<a href="http://passionfruit.com.cn/search_downloads.html">Downloads </a> | 
+						<a href="http://passionfruit.com.cn:4567">JBrowse </a> 
+					</p>
+					<p>E-mail：yuchaowei126@126.com<br>
+					Fujian Key Laboratory of Plant Virology<br>
+					Fujian Agriculture and Forestry University<br>
+					No.15 Shangxiadian Road, Cangshan District, Fuzhou City, Fujian Province, China</p>
+     </div>
+    </body>
+</html>
